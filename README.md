@@ -4,6 +4,12 @@
 
 Online Art Gallery - platform for sharing and managing artworks.
 
+## 🌟 Project Setup
+
+1. Clone the repository
+2. Run the `init.ps1` script to set up the project environment.
+3. Set up the `.env` file.
+
 ## 🛠 Technology Stack
 
 ### API (Backend)
@@ -109,3 +115,5 @@ art-vault/
 │
 └── package.json # Root package.json
 ```
+
+
