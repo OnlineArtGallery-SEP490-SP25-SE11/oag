@@ -1,0 +1,24 @@
+GET http://localhost:5000/api/blog/last-edited
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjVhYmNhN2Y1YWU3MmJjM2MwODc0OSIsInJvbGUiOlsidXNlciJdLCJpYXQiOjE3MzUxMzk2NTEsImV4cCI6MTczNTIyNjA1MX0.Ta0l8SPi491FzrVhRnIZyMq-Kf48pAR8PVipnvx1rEs
+
+###
+PUT http://localhost:5000/api/blog/676c6d73acecbd7d1f4d412f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjVhYmNhN2Y1YWU3MmJjM2MwODc0OSIsInJvbGUiOlsidXNlciJdLCJpYXQiOjE3MzUxMzk2NTEsImV4cCI6MTczNTIyNjA1MX0.Ta0l8SPi491FzrVhRnIZyMq-Kf48pAR8PVipnvx1rEs
+Content-Type: application/json
+
+{
+  "title": "My First Blo",
+  "content": "This is my first blog post"
+}
+
+
+###
+POST  http://localhost:5000/api/blog
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjVhYmNhN2Y1YWU3MmJjM2MwODc0OSIsInJvbGUiOlsidXNlciJdLCJpYXQiOjE3MzUzMTczNzgsImV4cCI6MTczNTQwMzc3OH0.lV-TrPFJ3_ZgZevBCoyHd4sdqOZtoOZzdu6IuFFtcSU
+Content-Type: application/json
+
+{
+  "title": "My First Blo",
+  "content": "This is my first blog post",
+  "image": "https://res.cloudinary.com/demo/image/upload/d_avatar.png/non_existing_id.png"
+}

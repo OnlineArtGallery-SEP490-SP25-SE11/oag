@@ -1,0 +1,13 @@
+### Create a new notification
+POST http://localhost:5000/api/notification/
+Content-Type: application/json
+
+{
+  "title":"Demo Notification 2",
+  "content":"Lorem ipsum odor amet, consectetuer adipiscing elit. Bibendum inceptos venenatis potenti ac pulvinar. Volutpat convallis metus netus hendrerit ut. Fermentum nulla libero imperdiet praesent, lectus lorem ad turpis. Nulla bibendum imperdiet tristique; proin iaculis orci torquent. Molestie ut lacinia rutrum platea finibus faucibus non. Eros in risus auctor inceptos eu non bibendum adipiscing dignissim. Mi lectus auctor vestibulum elit lacus vehicula. Phasellus vulputate nostra sem torquent ligula vehicula habitant lacinia. Efficitur pharetra maecenas a dignissim in sit congue.",
+  "userId":"67415800d8ad2dd79c69044e"
+}
+
+### GET notification by user id
+GET http://localhost:5000/api/notification?take=1&skip=1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDE1ODAwZDhhZDJkZDc5YzY5MDQ0ZSIsInJvbGUiOlsidXNlciJdLCJpYXQiOjE3MzQ2ODY4NjYsImV4cCI6MTczNDc3MzI2Nn0.X2EiPdaSO6PZzB-2E6lwl6yBt-bKjLdAxJxMxK_MF4s
