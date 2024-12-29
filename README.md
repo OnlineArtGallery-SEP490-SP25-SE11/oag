@@ -21,7 +21,7 @@ Online Art Gallery - platform for sharing and managing artworks.
   - [Redis](https://redis.io) (Upstash) - Cache & OTP storage
     - [@upstash/redis](https://docs.upstash.com/redis) - Redis client
 
-[//]: # '    - [ioredis](https://github.com/luin/ioredis) - Redis ORM'
+[//]: # "    - [ioredis](https://github.com/luin/ioredis) - Redis ORM"
 
 - **Authentication & Security**
 
