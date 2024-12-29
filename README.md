@@ -115,5 +115,3 @@ art-vault/
 │
 └── package.json # Root package.json
 ```
-
-
