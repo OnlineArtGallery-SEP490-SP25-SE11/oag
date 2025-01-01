@@ -14,76 +14,76 @@ Online Art Gallery - platform for sharing and managing artworks.
 
 ### API (Backend)
 
-- **Core**
+-   **Core**
 
-  - [Bun](https://bun.sh) - High-performance JavaScript runtime
-  - [Express](https://expressjs.com) - Web framework
-  - [TypeScript](https://www.typescriptlang.org/) - Type safety
+    -   [Bun](https://bun.sh) - High-performance JavaScript runtime
+    -   [Express](https://expressjs.com) - Web framework
+    -   [TypeScript](https://www.typescriptlang.org/) - Type safety
 
-- **Database & Storage**
-  - [MongoDB](https://www.mongodb.com) - Primary database
-    - [Mongoose](https://mongoosejs.com) - ODM
-    - [@typegoose/typegoose](https://typegoose.github.io/typegoose/) - TypeScript models
-  - [Redis](https://redis.io) (Upstash) - Cache & OTP storage
-    - [@upstash/redis](https://docs.upstash.com/redis) - Redis client
+-   **Database & Storage**
+    -   [MongoDB](https://www.mongodb.com) - Primary database
+        -   [Mongoose](https://mongoosejs.com) - ODM
+        -   [@typegoose/typegoose](https://typegoose.github.io/typegoose/) - TypeScript models
+    -   [Redis](https://redis.io) (Upstash) - Cache & OTP storage
+        -   [@upstash/redis](https://docs.upstash.com/redis) - Redis client
 
-[//]: # "    - [ioredis](https://github.com/luin/ioredis) - Redis ORM"
+[//]: # '    - [ioredis](https://github.com/luin/ioredis) - Redis ORM'
 
-- **Authentication & Security**
+-   **Authentication & Security**
 
-  - [JWT](https://jwt.io/) - Token-based auth
-  - [bcryptjs](https://github.com/dcodeIO/bcrypt.js) - Password hashing
-  - [Google Auth Library](https://github.com/googleapis/google-auth-library-nodejs)
-  - [cookie-parser](https://github.com/expressjs/cookie-parser)
-  - [cors](https://github.com/expressjs/cors)
+    -   [JWT](https://jwt.io/) - Token-based auth
+    -   [bcryptjs](https://github.com/dcodeIO/bcrypt.js) - Password hashing
+    -   [Google Auth Library](https://github.com/googleapis/google-auth-library-nodejs)
+    -   [cookie-parser](https://github.com/expressjs/cookie-parser)
+    -   [cors](https://github.com/expressjs/cors)
 
-- **Real-time**
+-   **Real-time**
 
-  - [Socket.IO](https://socket.io) - WebSocket implementation
+    -   [Socket.IO](https://socket.io) - WebSocket implementation
 
-- **Validation & Error Handling**
+-   **Validation & Error Handling**
 
-  - [Zod](https://zod.dev) - Schema validation
-  - [http-errors](https://github.com/jshttp/http-errors)
-  - [envalid](https://github.com/af/envalid) - Environment validation
+    -   [Zod](https://zod.dev) - Schema validation
+    -   [http-errors](https://github.com/jshttp/http-errors)
+    -   [envalid](https://github.com/af/envalid) - Environment validation
 
-- **Logging & Monitoring**
-  - [Pino](https://getpino.io) - Logger
-  - [pino-http](https://github.com/pinojs/pino-http)
-  - [pino-pretty](https://github.com/pinojs/pino-pretty)
+-   **Logging & Monitoring**
+    -   [Pino](https://getpino.io) - Logger
+    -   [pino-http](https://github.com/pinojs/pino-http)
+    -   [pino-pretty](https://github.com/pinojs/pino-pretty)
 
 ### Client (Frontend)
 
-- **Core**
+-   **Core**
 
-  - [Next.js 14](https://nextjs.org) - React framework
-  - [TypeScript](https://www.typescriptlang.org/)
-  - [React](https://reactjs.org)
+    -   [Next.js 14](https://nextjs.org) - React framework
+    -   [TypeScript](https://www.typescriptlang.org/)
+    -   [React](https://reactjs.org)
 
-- **State Management & Data Fetching**
+-   **State Management & Data Fetching**
 
-  - [Zustand](https://zustand-demo.pmnd.rs/) - Client state
-  - [Axios](https://axios-http.com) - HTTP client
+    -   [Zustand](https://zustand-demo.pmnd.rs/) - Client state
+    -   [Axios](https://axios-http.com) - HTTP client
 
-- **UI & Styling**
+-   **UI & Styling**
 
-  - [Tailwind CSS](https://tailwindcss.com)
-  - [Shadcn/ui](https://ui.shadcn.com) - UI components
-  - [Radix UI](https://www.radix-ui.com) - Headless components
-  - [Lucide Icons](https://lucide.dev)
+    -   [Tailwind CSS](https://tailwindcss.com)
+    -   [Shadcn/ui](https://ui.shadcn.com) - UI components
+    -   [Radix UI](https://www.radix-ui.com) - Headless components
+    -   [Lucide Icons](https://lucide.dev)
 
-- **Forms & Validation**
+-   **Forms & Validation**
 
-  - [React Hook Form](https://react-hook-form.com)
-  - [Zod](https://zod.dev)
+    -   [React Hook Form](https://react-hook-form.com)
+    -   [Zod](https://zod.dev)
 
-- **Authentication**
+-   **Authentication**
 
-  - [NextAuth.js](https://next-auth.js.org)
-  - [JWT](https://jwt.io/)
+    -   [NextAuth.js](https://next-auth.js.org)
+    -   [JWT](https://jwt.io/)
 
-- **Internationalization**
-  - [next-intl](https://next-intl-docs.vercel.app)
+-   **Internationalization**
+    -   [next-intl](https://next-intl-docs.vercel.app)
 
 ## 📁 Project Structure
 
