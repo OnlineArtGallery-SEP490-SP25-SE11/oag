@@ -1,0 +1,23 @@
+### Add Artwork
+POST http://localhost:5000/api/artwork
+Content-Type: application/json
+
+{
+  "title": "Sunset demo",
+  "description": "A beautiful sunset over the mountains, with a clear sky and a lake in the foreground. The colors are warm and inviting.",
+  "category": ["Nature", "Landscape"],
+  "dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "url": "http://example.com/sunset.jpg",
+  "status": "available",
+  "price": 0
+}
+
+### Get Artworks
+GET http://localhost:5000/api/artwork?skip=1&take=2
+
+
+### Get Artwork by ID
+GET http://localhost:5000/api/artwork/67c3489a98aa7ab7e8e28783
