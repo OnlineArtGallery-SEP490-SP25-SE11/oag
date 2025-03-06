@@ -1,9 +1,10 @@
 ### Add Artwork
 POST http://localhost:5000/api/artwork
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDE1ODAwZDhhZDJkZDc5YzY5MDQ0ZSIsInJvbGUiOlsidXNlciIsImFydGlzdCIsImFkbWluIl0sImlhdCI6MTc0MTE1NzUzOSwiZXhwIjoxNzQxMjQzOTM5fQ.XbzWcCuTGNLhthFo5LGgvN_HihPMIwTjT-K_s7KlwGw
 
 {
-  "title": "Sunset demo",
+  "title": "Sunset demo 111",
   "description": "A beautiful sunset over the mountains, with a clear sky and a lake in the foreground. The colors are warm and inviting.",
   "category": ["Nature", "Landscape"],
   "dimensions": {
@@ -16,8 +17,28 @@ Content-Type: application/json
 }
 
 ### Get Artworks
-GET http://localhost:5000/api/artwork?skip=1&take=2
+GET http://localhost:5000/api/artwork?artistName=huy
 
 
 ### Get Artwork by ID
-GET http://localhost:5000/api/artwork/67c3489a98aa7ab7e8e28783
+GET http://localhost:5000/api/artwork/67c7f59fa9b2f6ef05105332
+
+
+### Update Artwork
+PUT http://localhost:5000/api/artwork/67c7f59fa9b2f6ef05105332
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDE1ODAwZDhhZDJkZDc5YzY5MDQ0ZSIsInJvbGUiOlsidXNlciIsImFydGlzdCIsImFkbWluIl0sImlhdCI6MTc0MTE1NzUzOSwiZXhwIjoxNzQxMjQzOTM5fQ.XbzWcCuTGNLhthFo5LGgvN_HihPMIwTjT-K_s7KlwGw
+Content-Type: application/json
+
+{
+  "title": "Sunset demo Title",
+  "description": "Updated Description. A beautiful sunset over the mountains, with a clear sky and a lake in the foreground. The colors are warm and inviting.",
+  "category": ["Nature",
+    "Landscape","Updated Category"],
+  "status": "hidden",
+  "price": 1000
+}
+
+### Delete Artwork
+DELETE http://localhost:5000/api/artwork/67c7f59fa9b2f6ef05105332
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NDE1ODAwZDhhZDJkZDc5YzY5MDQ0ZSIsInJvbGUiOlsidXNlciIsImFydGlzdCIsImFkbWluIl0sImlhdCI6MTc0MTE1NzUzOSwiZXhwIjoxNzQxMjQzOTM5fQ.XbzWcCuTGNLhthFo5LGgvN_HihPMIwTjT-K_s7KlwGw
+Content-Type: application/json

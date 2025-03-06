@@ -155,10 +155,13 @@ def save_to_file(data, filename):
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"Saved {len(data)} items to {filename}")
 
-def send_to_api(artwork, api_url):
-    """Gửi dữ liệu đến API."""
+def send_to_api(artwork, api_url, jwt_token=None):
+    """Send data to API."""
     try:
         headers = {'Content-Type': 'application/json'}
+        if jwt_token:
+            headers['Authorization'] = f'Bearer {jwt_token}'
+
         response = requests.post(api_url, json=artwork, headers=headers)
 
         if response.status_code == 200 or response.status_code == 201:
@@ -179,7 +182,7 @@ def main():
     parser.add_argument('--api', type=str, default='http://localhost:5000/api/artwork', help='API endpoint to send data')
     parser.add_argument('--send', action='store_true', help='Send data to API endpoint')
     parser.add_argument('--retry', type=int, default=3, help='Number of retries for image fetching')
-
+    parser.add_argument('--jwt', type=str, default=None, help='JWT token for API authentication')
     args = parser.parse_args()
 
     successful_artworks = []
@@ -216,7 +219,7 @@ def main():
 
             # Kiểm tra xem có gửi đến API không
             if args.send:
-                success = send_to_api(artwork, args.api)
+                success = send_to_api(artwork, args.api, args.jwt)
                 if success:
                     successful_artworks.append(artwork)
                 else:

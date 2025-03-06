@@ -19,7 +19,7 @@ Content-Type: application/json
 
 {
   "provider": "google",
-  "providerAccountId": "118303620303769287374"
+  "providerId": "118303620303769287374"
 }
 
 
