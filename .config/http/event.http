@@ -1,0 +1,44 @@
+### Test Get All Events
+GET http://localhost:5000/api/event/
+Authorization: Bearer <your_token_here>
+
+### Test Get Event By ID
+GET http://localhost:5000/api/event/67c7138b0f9d590ec85431ec
+Authorization: Bearer <your_token_here>
+
+### Test Create Event
+POST http://localhost:5000/api/event/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjU4YWJjMmU1ZTQ1Y2ZhNWMzYjMwNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNzQxMzQxMTUyLCJleHAiOjE3NDE0Mjc1NTJ9.KdLzNIumgsxRFMrMBNi0xYrRNzg96OuDflaX_-b0t1Y
+Content-Type: application/json
+
+{
+    "title": "demoSample Event5h",
+    "description": "demoThis is a sample event description.",
+    "type": "vdemoconference",
+    "startDate": "2025-03-01T10:00:00.000Z",
+    "endDate": "2025-03-01T18:00:00.000Z",
+    "status": "UPCOMING",
+    "organizer": "demoOrganizer Name",
+    "image": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+}
+
+### Test Update Event
+PUT http://localhost:5000/api/event/67cac6df5266d260eb84c487
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjU4YWJjMmU1ZTQ1Y2ZhNWMzYjMwNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNzQxMzQxMTUyLCJleHAiOjE3NDE0Mjc1NTJ9.KdLzNIumgsxRFMrMBNi0xYrRNzg96OuDflaX_-b0t1Y
+Content-Type: application/json
+
+{
+    "status": "COMPLETED"
+ 
+}
+
+### Test Delete Event
+DELETE http://localhost:5000/api/event/{id}
+Authorization: Bearer <your_token_here>
+### Test User Authentication
+### Test Get User Info
+
+
+### Test Participate Event
+POST http://localhost:5000/api/event/67c6c0b149b297dbb045ff3a/participate
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjU4YWJjMmU1ZTQ1Y2ZhNWMzYjMwNSIsInJvbGUiOlsiYWRtaW4iXSwiaWF0IjoxNzQxMzQyMzI4LCJleHAiOjE3NDE0Mjg3Mjh9.uoAFL2QBfo4wb9nAz_gYSV8L2ql0IVL_LQAcOFaozUc
