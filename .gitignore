@@ -11,6 +11,8 @@ bun.lockb
 yarn.lockb
 package-.json
 
+bun.lock
+package-lock.json
 
 # for editor
 .vscode
