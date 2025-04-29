@@ -10,7 +10,7 @@
 	"scripts": {
 		"dev:frontend": "cd client && next dev",
 		"dev:backend": "cd api && bun dev",
-		"dev:admin": "cd client-admin && next dev",
+		"dev:admin": "cd client-admin && bun dev",
 		"dev": "concurrently \"bun run dev:frontend\" \"bun run dev:backend\" \"bun run dev:admin\"",
 		"lint": "bun run lint:api && bun run lint:client && bun run lint:client-admin",
 		"lint:api": "cd api && bun lint",
